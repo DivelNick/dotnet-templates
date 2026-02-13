@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "ivt",
+  "classifications": [ "ivt_templates", "UseCase" ],
+  "name": "GetUseCase с Валидацией",
+  "description": "Стандартный шаблон для добавления структуры Get запроса с валидацией и оркестратором",
+  "identity": "ivt.templates.usecase.get.validation",
+  "shortName": "usecase-get-v",
+  "tags": {
+    "language": "C#",
+    "type": "item"
+  },
+  "sourceName": "{FeatureName}",
+  "preferNameDirectory": false
+}

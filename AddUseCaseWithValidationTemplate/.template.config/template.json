@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "ivt",
+  "classifications": [ "ivt_templates", "UseCase" ],
+  "name": "AddUseCase с Валидацией",
+  "description": "Стандартный шаблон для добавления структуры Add запроса с валидацией и оркестратором",
+  "identity": "ivt.templates.usecase.add.validation",
+  "shortName": "usecase-add-v",
+  "tags": {
+    "language": "C#",
+    "type": "item"
+  },
+  "sourceName": "{FeatureName}",
+  "preferNameDirectory": false
+}
