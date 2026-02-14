@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "ivt",
+  "classifications": [ "ivt_templates", "UseCase" ],
+  "name": "DeleteUseCase с Валидацией",
+  "description": "Стандартный шаблон для добавления структуры Delete запроса с валидацией и оркестратором",
+  "identity": "ivt.templates.usecase.delete.validation",
+  "shortName": "usecase-delete-v",
+  "tags": {
+    "language": "C#",
+    "type": "item"
+  },
+  "sourceName": "{FeatureName}",
+  "preferNameDirectory": false
+}
