@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "ivt",
+  "classifications": [ "ivt_templates", "UseCase" ],
+  "name": "ListUseCase с Валидацией",
+  "description": "Стандартный шаблон для добавления структуры List запроса с валидацией и оркестратором",
+  "identity": "ivt.templates.usecase.list.validation",
+  "shortName": "usecase-list-v",
+  "tags": {
+    "language": "C#",
+    "type": "item"
+  },
+  "sourceName": "{FeatureName}",
+  "preferNameDirectory": false
+}
