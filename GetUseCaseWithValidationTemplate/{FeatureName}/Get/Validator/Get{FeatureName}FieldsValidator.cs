@@ -6,5 +6,7 @@ public class Get{FeatureName}FieldsValidator : AbstractValidator<Get{FeatureName
 {
     public Get{FeatureName}FieldsValidator()
     {
+        RuleFor(m => m.Id)
+            .NotEmpty();
     }
 }
