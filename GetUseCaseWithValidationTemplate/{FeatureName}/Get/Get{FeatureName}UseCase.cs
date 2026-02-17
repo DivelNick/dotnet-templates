@@ -21,8 +21,8 @@ public class Get{FeatureName}UseCase : SimpleUseCase<ISimpleOutputPort<Get{Featu
     public override async Task ExecuteAfterInputModelValidation(Get{FeatureName}Input input)
     {
       
-     	var dto = new ProtocolDto(input.DomainModel);
+     	var dto = new {FeatureName}Dto(input.DomainModel);
 
-        _outputPort.Success(new GetProtocolViewModel() { Model = dto });
+        _outputPort.Success(new Get{FeatureName}ViewModel() { Model = dto });
     }
 }

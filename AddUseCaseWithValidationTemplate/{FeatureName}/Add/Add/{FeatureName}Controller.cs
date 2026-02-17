@@ -21,10 +21,8 @@ public class {FeatureName}Controller : ControllerBase, ISimpleOutputPort<bool>
         useCase.SetOutputPort(this);
         
         var input = new Add{FeatureName}Input();
-        var model = new {FeatureName}Dto();
+        input.Model = rModel.Model;
         
-
-        input.Model = model;
         
         await useCase.ExecuteAsync(input);
 

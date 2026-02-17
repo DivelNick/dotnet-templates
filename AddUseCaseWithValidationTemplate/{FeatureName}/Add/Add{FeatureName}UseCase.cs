@@ -27,7 +27,7 @@ public class Add{FeatureName}UseCase : SimpleUseCase<ISimpleOutputPort<bool>, Ad
         _unitOfWork = unitOfWork;
     }
 
-    public override Task ExecuteAfterInputModelValidation(Add{FeatureName}Input input)
+    public override async Task ExecuteAfterInputModelValidation(Add{FeatureName}Input input)
     {
         var p = new {FeatureName}();
         
