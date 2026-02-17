@@ -1,6 +1,6 @@
 ﻿namespace WebApi.Controllers.{FeatureName}.Get;
 
-[Microsoft.AspNetCore.Components.Route("api/[controller]")]
+[Route("api/[controller]")]
 //[Authorize]
 [ApiController]
 public class {FeatureName}Controller : ControllerBase, ISimpleOutputPort<Get{FeatureName}ViewModel>

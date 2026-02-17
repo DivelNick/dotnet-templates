@@ -1,6 +1,6 @@
 ﻿namespace WebApi.Controllers.{FeatureName}.Update;
 
-[Microsoft.AspNetCore.Components.Route("api/[controller]")]
+[Route("api/[controller]")]
 //[Authorize]
 [ApiController]
 public class {FeatureName}Controller : ControllerBase, ISimpleOutputPort<Update{FeatureName}ViewModel>
@@ -9,7 +9,7 @@ public class {FeatureName}Controller : ControllerBase, ISimpleOutputPort<Update{
 
 
     /// <summary>
-    /// Получение записи {FeatureName} 
+    /// Обновление записи {FeatureName} 
     /// </summary>
     /// <param name="useCase"></param>
     /// <param name="input"></param>

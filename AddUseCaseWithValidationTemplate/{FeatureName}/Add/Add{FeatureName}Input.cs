@@ -2,5 +2,5 @@
 
 public class Add{FeatureName}Input : ValidationContextInput
 {
-    
+    public {FeatureName}Dto Model { get; set; }
 }

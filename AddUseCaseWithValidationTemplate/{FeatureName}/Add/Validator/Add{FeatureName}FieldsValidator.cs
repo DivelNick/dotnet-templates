@@ -4,5 +4,8 @@ public class Add{FeatureName}FieldsValidator : AbstractValidator<Add{FeatureName
 {
     public Add{FeatureName}FieldsValidator()
     {
+        RuleFor(x => x.Model)
+            .NotNull()
+            .WithMessage("Тело запроса не может быть null");
     }
 }

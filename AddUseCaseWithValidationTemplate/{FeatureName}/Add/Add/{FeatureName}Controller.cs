@@ -1,4 +1,4 @@
-﻿namespace WebApi.Controllers.{FeatureName}.Delete;
+﻿namespace WebApi.Controllers.{FeatureName}.Get;
 
 [Route("api/[controller]")]
 //[Authorize]
@@ -9,20 +9,23 @@ public class {FeatureName}Controller : ControllerBase, ISimpleOutputPort<bool>
 
 
     /// <summary>
-    /// Удаление записи {FeatureName} 
+    /// Добавление записи {FeatureName} 
     /// </summary>
     /// <param name="useCase"></param>
     /// <param name="input"></param>
     /// <returns></returns>
-    [HttpDelete("{FeatureName}/Delete")]
-    public async Task<IActionResult> List([FromServices] IDelete{FeatureName}UseCase useCase,
-        [FromQuery] Guid Id)
+    [HttpPost("{FeatureName}/Add")]
+    public async Task<IActionResult> List([FromServices] IAdd{FeatureName}UseCase useCase,
+    [FromBody] [Required] Add{FeatureName}RequestModel rModel)
     {
         useCase.SetOutputPort(this);
+        
+        var input = new Add{FeatureName}Input();
+        var model = new {FeatureName}Dto();
+        
 
-        var input = new Delete{FeatureName}Input();
-        input.Id = Id;
-
+        input.Model = model;
+        
         await useCase.ExecuteAsync(input);
 
         return _viewModel;
